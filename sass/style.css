@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+body {
+  background-color: steelblue;
+}
+
+.container {
+  background-color: white;
+  width: 80vw;
+  max-width: 37.5em;
+  padding: 3em 2.5em;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 1em;
+  box-shadow: 0 1.2em 1.8em rgba(8, 21, 65, 0.25);
+}
+
+.search-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.5em;
+}
+.search-wrapper button {
+  font-size: 1em;
+  background-color: rgb(222, 199, 47);
+  border: none;
+  color: white;
+  padding: 0.8em 0;
+  border-radius: 1.5em;
+}
+.search-wrapper input {
+  border: none;
+  font-size: 1.9em;
+  padding: 0 0.55em;
+  outline: none;
+  border-bottom: 2px solid rgb(222, 199, 47);
+  color: #222a43;
+}
+
+#result {
+  margin-top: 1.25em;
+}
+#result .flag-img {
+  width: 50%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+  display: block;
+}
+#result h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222a43;
+  letter-spacing: 2px;
+  margin-bottom: 1.8em;
+}
+#result h4 {
+  text-align: center;
+  font-weight: 500;
+  color: #ad3615;
+  font-size: 1.3em;
+}
+
+.wrapper .body-wrapper {
+  margin-bottom: 1em;
+  letter-spacing: 0.3px;
+}
+.wrapper .body-wrapper h3 {
+  font-weight: 500;
+  display: inline;
+  color: #222a43;
+}
+.wrapper .body-wrapper span {
+  color: rgb(143, 140, 140);
+}
+
+@media (max-width: 700px) {
+  .search-wrapper {
+    grid-template-columns: 6fr 3fr;
+  }
+  .search-wrapper input {
+    font-size: 1em;
+  }
+}
+@media (max-width: 450px) {
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-wrapper button {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .search-wrapper input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+}
+@media (max-width: 280px) {
+  .container {
+    padding: 1.5em 1em;
+  }
+  .search-wrapper input {
+    width: 100%;
+  }
+  .search-wrapper button {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
